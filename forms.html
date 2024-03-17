@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="utf-8">
+            <meta charset="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="description" content="forms">
+            <meta charset="author" content="Snow">
+    
+            <title>
+                Forms in HTML5
+            </title>
+
+            <style>
+
+                ul {
+                    padding-left: 1rem;
+                }
+                li {
+                    list-style: none;
+                }
+
+                fieldset {
+                    background-color: bisque;
+                    /*outline: 0.5rem aqua solid;*/
+                    margin: 5px;
+                    width: 10px;
+                }
+
+                select option {
+                    background-color: brown;
+                }
+
+
+            </style>
+    
+    </head>
+    <body>
+        <main>
+            <form method="get">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <label>Username:
+                        <input type="text" name="username" maxlength="30" required="required">
+                    </label>
+                    <label>Email: 
+                        <input type="email" name="useremail" required="required">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your review</legend>
+                    
+                    <select name="devices">
+                        <option value="iPod">iPod</option>
+                        <option value="radio">Radio</option>
+                        <option value="computer">Computer</option>
+                        <option value="phone">Phone</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="raspberry" selected="selected">Raspberry</option>
+                    </select>
+                    
+                    <ul>
+                        <li><input type="radio" name="genre" value="rock">Rock</li>
+                        <li><input type="radio" name="genre" value="Jazz">Jazz</li>
+                        <li><input type="radio" name="genre" value="Pop">Pop</li>
+                    </ul>
+
+                    <textarea name="commentsarea" placeholder="Write here. Up to 300 characters ..." maxlength="300"></textarea><br><br>
+
+                    <label><input type="checkbox" value="emailspam" checked="checked">Sign me up for email updates</label>
+                </fieldset>
+
+                <input type="submit" value="Submit review"><br><br>
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
